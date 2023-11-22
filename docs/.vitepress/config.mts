@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Imlight",
   description: "Rewriting Magic",
   srcDir: "modules",
+  base: "/Imlight-docs/",
   themeConfig: {
     logo: '../assets/flowers.png',
     nav: [
