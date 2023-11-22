@@ -24,7 +24,7 @@ PassKey3 is another hashing algorithm used by the game client to securely trasmi
 
 It ia hashed using SHA512 and the initial input is the session key (or _ClientKey2_) that was given in user [authentication](./auth.md). 
 
-It is then salted again with a string formmated as `$"{sessionID}{timeSecs}{timeMillis}"`, where `timeSecs` and `timeMillis` are the established times received from the server's `SessionOffer` control message when the [session](../systems/kinp/session.md) was created.
+It is then salted again with a string formatted as `$"{sessionID}{timeSecs}{timeMillis}"`, where `timeSecs` and `timeMillis` are the established times received from the clients's [SessionAccept](../systems/kinp/controlmessages.md#session-accept) message when the [session](../systems/kinp/session.md) was created.
 
 ```csharp
 public static string EncodePK3(string input, ushort sessionID, uint timeSecs, uint timeMillis)

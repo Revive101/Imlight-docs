@@ -19,7 +19,6 @@ export default defineConfig({
         items: [
           { text: 'Getting Started', link: '/internals/index' },
           { text: 'Launch Args', link: '/internals/launchargs' },
-          { text: 'String ID', link: '/internals/stringid' },
           { text: 'Schemas', link: '/internals/schemas' },
         ]
       },
@@ -65,7 +64,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Revive101/Imlight-docs' }
     ]
   }
 })

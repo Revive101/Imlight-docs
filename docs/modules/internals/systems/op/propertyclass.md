@@ -1,13 +1,15 @@
 # PropertyClass
 The game client uses an abstract data type, known as a _PropertyClass_, to designate complex types capable of undergoing binary serialization. Internally, this is an assembly [reflection](https://learn.microsoft.com/en-us/cpp/dotnet/reflection-cpp-cli?view=msvc-170). Each PropertyClass must be labeled with a property hash.
 
-The property class hash is a [string ID](../../stringid.md) of the PropertyClass name, prefixed with it's internal representation, such as `class` or `struct`.
+The property class hash is a [string ID](../../schemas.md#string-id) of the PropertyClass name, prefixed with it's internal representation, such as `class` or `struct`.
 
 ## Property
-Each property of the _PropertyClass_ is simply labeled as `Property`, and serves as specific field elaboration to the binary encoding process. Each `Property` element denotes two important attributes: `Hash`, and `Flags`.
+Each property of the `PropertyClass` is simply labeled as `Property`, and serves as specific field elaboration to the binary encoding process. 
+
+Each `Property` element denotes two important attributes: `Hash`, and `Flags`.
 
 ### Property Hash
-Each property may be prefixed with an attribute detailing it's property hash. This is an expansion of a [string ID](../../stringid.md).
+Each property may be prefixed with an attribute detailing it's property hash. This is an expansion of a [string ID](../../schemas.md#string-id).
 
 ```csharp
 public static uint HashPropertyName(string name, string type)
