@@ -83,7 +83,7 @@ private static byte[] DeriveTwofishNonce()
 __Figure B.I__: `Rec1` method from Imlight's cryptography library.
 
 ## ClientKey1
-The aforementioned password hash is another homebrew hashing algorithm, called _ClientKey1_ (or abbreviated to _CK1_). It is hashed with SHA512 alongside the session details given in `SessionOffer` control message when the [session](../kinp/session.md) was created, and is base64 encoded.
+The aforementioned password hash is another homebrew hashing algorithm, called _ClientKey1_ (or abbreviated to _CK1_). It is hashed with SHA512 alongside the session details given in `SessionOffer` control message when the [session](../systems/kinp/session.md) was created, and is base64 encoded.
 ```csharp
 public static string HaskCK1(string input, ushort sessionID, uint timeSecs, uint timeMillis)
 {

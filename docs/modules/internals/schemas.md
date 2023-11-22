@@ -9,5 +9,5 @@ To do this, three distinct items are employed in succession:
 * __Object__: The end result object.
 
 A manifest is used to first obtain the template. These templates are located in the game client's `Root.wad` file, and a particular template can be located by looking up a certain value.
-* For [CoreObjects](./op/coreobject.md), the [Template Manifest](./op/coreobject.md#template-manifest) is used.
+* For [CoreObjects](./systems/op/coreobject.md), the [Template Manifest](./systems/op/coreobject.md#template-manifest) is used.
 * Game effects use a collection of manifests found in `GameEffectData/` and `GameEffectRuleData/` directories.
