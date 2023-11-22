@@ -25,5 +25,5 @@ __Figure A.I__ -- The binary sizes of each DML element type.
 ## DML Templates
 For serialization purposes, a template must be known ahead of time to serialize binary data accordingly. In the case of the game client, the DML messages are kept internally, and can be represented as XML.
 
-Using an unpacking tool such as [katsuba](https://github.com/vbe0201/katsuba), these message templtaes can be found in `Root.wad` in the `GameData` directory. Once unpacked,
+Using an unpacking tool such as [katsuba](https://github.com/vbe0201/katsuba), these message templates can be found in `Root.wad` in the `GameData` directory. Once unpacked,
 a user may search for "*Messages.xml" to find the XML representation of these templates.

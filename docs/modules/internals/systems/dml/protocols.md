@@ -27,8 +27,6 @@ __Figure A.I__ -- The fields a protocol may contain.
 ```
 __Figure A.II__ - An example of a `_ProtocolInfo` node.
 
-The original files do not enforce any sort of lint, and multiple internal typos exist amongst these records. When implementing these protocols, it's recommended to have failsafe methods incase of XML typos.
-
 ### List of Protocols
 The table below represents all the protocols that currently exist internally.
 

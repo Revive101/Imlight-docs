@@ -14,7 +14,7 @@ __Figure A.I__ - A table of all possible bit flags for an object serializer.
 ## Serialization Modes
 ObjectProperty serializers should anticipate two separate types of serialization: verbose, and compact.
 
-In either case, a `ByteString` of ObjectProperty will always prefix itself with it's hash identifier.
+In either case, a `PropertyClass` buffer will always prefix itself with its [property hash](./propertyclass.md#property-hash).
 
 ### Compact
 In passage through the [DML](../dml/index.md), a _compact_ serializer is used. In compact mode, property hashes and their length are skipped during serialization. Properties are listed in order as they are written in reflection.

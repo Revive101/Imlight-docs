@@ -1,5 +1,5 @@
 # Launch Arguments
-When launching the `WizardGraphicalClient.exe` located in the `bin` directory, there are various launch arguments that can be passed to modify the behavior of the client.
+When launching the `.exe` located in the `bin` directory, there are various launch arguments that can be passed to modify the behavior of the client.
 
 Below is a table of the possible launch arguments.
 

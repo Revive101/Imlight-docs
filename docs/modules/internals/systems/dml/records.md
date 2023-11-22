@@ -1,6 +1,8 @@
 # DML Records
 To decode a binary representation of a DML message, a serializer must understand a standardized template ahead of time in order to compute readable data. To do this, the game client employs an entire representation of said data in a _DML record_.
 
+Each record will also have it's own template as found in the nodes that follow the [protocol](./protocols.md) information node.
+
 ## Record Syntax
 Each DML record starts as an XML node named as a short identifier, prefixed with `MSG_[...]`. This node holds one child node, `RECORD`, where each DML element is written in order of encoding.
 
