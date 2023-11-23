@@ -26,6 +26,6 @@ The `SessionActor` will only dispatch `IMessage` if it received from the socket.
 :::
 
 ## Gathering Services
-When a `SessionActor` connection is first established, a minimal amount of message [services](./messageservice.md) are granted to the session as per the writing in a [service factory](./servicefactory.md). This means that each `SessionActor` has two different sets of services: one before the session [handshake](../internals/systems/kinp/session.md) is made, and one after.
+When a `SessionActor` connection is first established, a minimal amount of message [services](./messageservice.md) are granted to the session as per the writing in a service factory. This means that each `SessionActor` has two different sets of services: one before the session [handshake](../internals/systems/kinp/session.md) is made, and one after.
 
 Each server has its own derived `ServiceFactory` that dictates both set of services.
