@@ -3,11 +3,11 @@
 layout: home
 
 hero:
-  name: "Imlight"
+  name: "Imlight-docs"
   text: "Rewriting Magic"
   tagline: An independent private server project aimed to reimagine a wizard adventure.
   image: 
-    src: ./assets/flowers.png
+    src: /logo-nobg.png
   actions:
     - theme: brand
       text: Imlight
