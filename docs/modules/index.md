@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Imlight
-      link: /markdown-examples
+      link: ./imlight/index
     - theme: alt
       text: Game Internals
       link: ./internals/index
