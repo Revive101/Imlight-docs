@@ -10,7 +10,7 @@ hero:
     src: ./assets/flowers.png
   actions:
     - theme: brand
-      text: Jumpstart
+      text: Imlight
       link: /markdown-examples
     - theme: alt
       text: Game Internals
