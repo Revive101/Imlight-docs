@@ -90,7 +90,7 @@ Gets the `Account` object associated with the active session. Will return null i
 protected TypeCache.CoreObject GetActiveCoreObject() 
 ```
 
-Gets the active [core object](../internals/systems/op/coreobject.md) (that is, the actual game object) associated with the current session.
+Gets the active [core object](../../internals/systems/op/coreobject.md) (that is, the actual game object) associated with the current session.
 
 ### GetActiveCharacter
 ```csharp

@@ -1,10 +1,10 @@
 # Session Actor
-The `SessionActor` is the [actor](./index.md#actor-model) representation of a connected socket to Imlight. It's supervisor is the server itself.
+The `SessionActor` is the [actor](./actorsystem.md) representation of a connected socket to Imlight. It's supervisor is the server itself.
 
 ## Socket Actions
 The `SessionActor`'s primary responsibility is to manage the socket connection it has with it's respective game client. It both receives and sends data to the socket.
 
-When data is received, it is deserialized by the `MessageSerializer` as a potential [magic packet](../internals/systems/kinp/packet-framing.md). Once a magic packet is decoded, it is dispatched to a message handler found in any of the message [services](./messageservice.md).
+When data is received, it is deserialized by the `MessageSerializer` as a potential [magic packet](../../internals/systems/kinp/packet-framing.md). Once a magic packet is decoded, it is dispatched to a message handler found in any of the message [services](./messageservice.md).
 
 To send data to the socket, one may use the `SendToSocket()` method found within the `SessionActor`.
 
@@ -26,6 +26,6 @@ The `SessionActor` will only dispatch `IMessage` if it received from the socket.
 :::
 
 ## Gathering Services
-When a `SessionActor` connection is first established, a minimal amount of message [services](./messageservice.md) are granted to the session as per the writing in a service factory. This means that each `SessionActor` has two different sets of services: one before the session [handshake](../internals/systems/kinp/session.md) is made, and one after.
+When a `SessionActor` connection is first established, a minimal amount of message [services](./messageservice.md) are granted to the session as per the writing in a service factory. This means that each `SessionActor` has two different sets of services: one before the session [handshake](../../internals/systems/kinp/session.md) is made, and one after.
 
 Each server has its own derived `ServiceFactory` that dictates both set of services.
