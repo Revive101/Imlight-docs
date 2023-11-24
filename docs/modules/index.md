@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Imlight-docs"
+  name: "Imlight"
   text: "Rewriting Magic"
   tagline: An independent private server project aimed to reimagine a wizard adventure.
   image: 

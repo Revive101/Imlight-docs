@@ -22,12 +22,20 @@ export default defineConfig({
     sidebar: {
       '/imlight': [
         {
-          text: 'Imlight',
+          text: 'Frequent',
           items: [
             { text: 'Imlight', link: '/imlight/index' },
-            { text: 'Schemas', link: '/imlight/schemas' },
-            { text: 'Sessions', link: '/imlight/sessionactor' },
-            { text: 'Message Services', link: '/imlight/messageservice' },
+            { text: 'Commands', link: '/imlight/commands' },
+          ]
+        },
+        {
+          text: 'Contributing',
+          items: [
+            { text: 'Building Imlight', link: '/imlight/contrib/building' },
+            { text: 'Actor System', link: '/imlight/contrib/actorsystem' },
+            { text: 'Schemas', link: '/imlight/contrib/schemas' },
+            { text: 'Sessions', link: '/imlight/contrib/sessionactor' },
+            { text: 'Message Services', link: '/imlight/contrib/messageservice' },
           ]
         },
         {
