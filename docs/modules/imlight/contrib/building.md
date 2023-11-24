@@ -1,4 +1,5 @@
 # Building Imlight
+Hello, developers! Just a reminder that Imlight is still closed-source and only available to the team of Revive101.
 
 ## Development Environment
 All 3 [parts](../index.md#imlight-parts) are running [dotnet 7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0). 
@@ -12,7 +13,7 @@ Imlight has a few running gears, and expects existing tools to be available at s
 Imlight sources the same files the game client uses for patching, and a URL to that patch server should be present in `Config/Imlight.ini`. You may run your own patch server using [Aurorium](https://github.com/Revive101/Aurorium).
 
 ::: warning
-Do not _ever_ point Imlight towards the live patch server.
+Do not _ever_ point Imlight towards the live patch server. 
 :::
 
 #### Dragon Database
@@ -31,7 +32,7 @@ If a database URL *is* present, _dragon_ requires certificates to be available a
 ## FAQ
 > After selecting a character, the game hangs.
 
-If you're running Imlight on the same machine you're playing on, check client logs to make sure Imlight is _not_ sending your outside IP.
+Imlight is most likely giving the game client the wrong IP. 
 
 ---
 
