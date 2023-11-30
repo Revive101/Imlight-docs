@@ -37,7 +37,27 @@ Commands are not currently available for quality-assurance branch.
 | ban ip | Hall Monitor | `.ban ip $ip $bantime <e.g. 4d20h3s> $reason` | Bans an IP for an amount of time. |
 | ban machine | Hall Monitor | `.ban machine $machineid $bantime <e.g. 4d20h3s> $reason` | Bans a machine Id for an amount of time. |
 | ban info | Hall Monitor | `.ban info $username` | Shows information about the most recent ban on an account. |
-| ban list | Hall Monitor | `.ban list` | Shows a list of currently banned accounts. |
 | unban account | Hall Monitor | `.unban account $username` | Unbans an account. |
 | unban ip | Hall Monitor | `.unban ip $ip` | Unbans an IP. |
 | unban machine | Hall Monitor | `.unban machine $machineid` | Unbans a machine ID. |
+
+## Context Commands
+The commands below require a player to be selected to use.
+
+:::warning
+Your command context will not drop. If you select a player, that player will still be in your context no matter how much time has passed.
+:::
+
+| Command | Security | Syntax | Description |
+| ------- | -------- | ------ | ----------- |
+| mute | Hall Monitor | `.mute $duration <e.g. 4d20h3s> $reason` | Mutes the entire account. |
+| unmute | Hall Monitor | `.unmute` | Unmutes the account. |
+| kick | Hall Monitor | `.kick` | Kicks the player from the current server. |
+| warn | Hall Monitor | `.warn $reason` | Adds an infraction record to the user's account. |
+| info | Hall Monitor | `.info` | Shows account information about the selected character. |
+
+## Debug Commands
+
+| Command | Security | Syntax | Description |
+| ------- | -------- | ------ | ----------- |
+| gps | Hall Monitor | `.gps` | Shows your current location on the server. |
