@@ -3,9 +3,10 @@ A number of commands are available for game masters.
 
 Security tiers:
 * `0` - Normal Player
-* `1` - Hall Monitors
-* `2` - Developers (_only available in debug build_)
-* `3` - Game Master
+* `1` - Quality Assurance
+* `2` - Hall Monitors
+* `3` - Developers (_only available in debug build_)
+* `4` - Game Master
 
 If Imlight was built in _release_ mode, any command with a developer security level required will instead be forwarded to Game Master tier.
 
@@ -16,7 +17,7 @@ Commands are not currently available for quality-assurance branch.
 ## Ungrouped Commands
 | Command | Security | Syntax | Description |
 | ------- | -------- | ------ | ----------- |
-| teleport | Hall Monitor | `.teleport $zonename` | Teleports you to a specific zone. If a zone is not found, it will guess. |
+| teleport | Quality Assurance | `.teleport $zonename` | Teleports you to a specific zone. If a zone is not found, it will guess. |
 
 ## Account Commands
 
@@ -33,10 +34,12 @@ Commands are not currently available for quality-assurance branch.
 | account infractions | Hall Monitor | `.account infractions $username` | Shows the infractions set on an account. |
 | account warn | Hall Monitor | `.account warn $username $reason` | Adds an infraction record to an account. |
 | account removewarn | Hall Monitor | `.account removewarn $username` | Removes an infraction record from an account. |
+| ban | Hall Monitor | `.ban` | Shows all of the available ban commands. |
 | ban account | Hall Monitor | `.ban account $username $bantime <e.g. 4d20h3s> $reason` | Bans an account for an amount of time. |
 | ban ip | Hall Monitor | `.ban ip $ip $bantime <e.g. 4d20h3s> $reason` | Bans an IP for an amount of time. |
 | ban machine | Hall Monitor | `.ban machine $machineid $bantime <e.g. 4d20h3s> $reason` | Bans a machine Id for an amount of time. |
 | ban info | Hall Monitor | `.ban info $username` | Shows information about the most recent ban on an account. |
+| unban | Hall Monitor | `.unban` | Shows all of the available unban commands. |
 | unban account | Hall Monitor | `.unban account $username` | Unbans an account. |
 | unban ip | Hall Monitor | `.unban ip $ip` | Unbans an IP. |
 | unban machine | Hall Monitor | `.unban machine $machineid` | Unbans a machine ID. |
@@ -60,4 +63,4 @@ Your command context will not drop. If you select a player, that player will sti
 
 | Command | Security | Syntax | Description |
 | ------- | -------- | ------ | ----------- |
-| gps | Hall Monitor | `.gps` | Shows your current location on the server. |
+| gps | Quality Assurance | `.debug gps` | Shows your current location on the server. |
