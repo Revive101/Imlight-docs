@@ -10,10 +10,6 @@ Security tiers:
 
 If Imlight was built in _release_ mode, any command with a developer security level required will instead be forwarded to Game Master tier.
 
-::: warning
-Commands are not currently available for quality-assurance branch.
-:::
-
 ## Ungrouped Commands
 | Command | Security | Syntax | Description |
 | ------- | -------- | ------ | ----------- |
