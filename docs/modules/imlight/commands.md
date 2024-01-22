@@ -55,6 +55,16 @@ Your command context will not drop. If you select a player, that player will sti
 | warn | Hall Monitor | `.warn $reason` | Adds an infraction record to the user's account. |
 | info | Hall Monitor | `.info` | Shows account information about the selected character. |
 
+## Modification Commands
+
+| Command | Security | Syntax | Description |
+| ------- | -------- | ------ | ----------- |
+| levelup | Quality Assurance | `mod levelup` | Levels up your character. |
+| level | Quality Assurance | `mod level $level` | Levels up your character to a certain level. |
+| speed | Quality Assurance | `mod speed $speed`| Changes your speed multipler. Max of 10. |
+| additem | Quality Assurance | `mod additem $id` | Adds an item to your inventory by ID. |
+
+
 ## Debug Commands
 
 | Command | Security | Syntax | Description |
