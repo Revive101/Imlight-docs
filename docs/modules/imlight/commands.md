@@ -63,6 +63,7 @@ Your command context will not drop. If you select a player, that player will sti
 | level | Quality Assurance | `mod level $level` | Levels up your character to a certain level. |
 | speed | Quality Assurance | `mod speed $speed`| Changes your speed multipler. Max of 10. |
 | additem | Quality Assurance | `mod additem $id` | Adds an item to your inventory by ID. |
+| name | Quality Assurance | `mod name $newName` | Adds a new name override to your character. |
 
 
 ## Debug Commands
