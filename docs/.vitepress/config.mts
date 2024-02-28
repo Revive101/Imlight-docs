@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import taskLists from 'markdown-it-task-lists';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,6 +7,11 @@ export default defineConfig({
   description: "Rewriting Magic",
   srcDir: "modules",
   base: "/Imlight-docs/",
+  markdown: {
+    config: async (md) => {
+      md.use(taskLists);
+    }
+  },
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" }],
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" }],
@@ -26,6 +32,7 @@ export default defineConfig({
           items: [
             { text: 'Imlight', link: '/imlight/index' },
             { text: 'Commands', link: '/imlight/commands' },
+            { text: 'Todo', link: '/imlight/todo' },
           ]
         },
         {
