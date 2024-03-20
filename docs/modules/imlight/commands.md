@@ -59,11 +59,13 @@ Your command context will not drop. If you select a player, that player will sti
 
 | Command | Security | Syntax | Description |
 | ------- | -------- | ------ | ----------- |
-| levelup | Quality Assurance | `mod levelup` | Levels up your character. |
-| level | Quality Assurance | `mod level $level` | Levels up your character to a certain level. |
-| speed | Quality Assurance | `mod speed $speed`| Changes your speed multipler. Max of 10. |
-| additem | Quality Assurance | `mod additem $id` | Adds an item to your inventory by ID. |
-| name | Quality Assurance | `mod name $newName` | Adds a new name override to your character. |
+| levelup | Quality Assurance | `.mod levelup` | Levels up your character. |
+| level | Quality Assurance | `.mod level $level` | Levels up your character to a certain level. |
+| speed | Quality Assurance | `.mod speed $speed`| Changes your speed. The number matches the ingame, so `40` would give you mount speed. |
+| additem | Quality Assurance | `.mod additem $id` | Adds an item to your inventory by ID. |
+| name | Quality Assurance | `.mod name $newName` | Adds a new name override to your character. |
+| maxgold | Quality Assurance | `.mod maxgold $newMaxGold` | Changes the amount of max gold you can carry. |
+| addgold | Quality Assurance | `.mod addgold $gold` | Adds gold to your wizard. |
 
 
 ## Debug Commands
