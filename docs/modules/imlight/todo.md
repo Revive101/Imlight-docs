@@ -2,45 +2,130 @@
 
 ## Combat
 
-- [ ] Combat
-  - [ ] Spawning the combat sigil
-    - [ ] Understanding combat sigils and how they work
-    - [ ] `WizardZoneCreature` player interaction
-    - [ ] Spawning combat sigils on demand
-  - [ ] Starting animation for each combat participant
-  - [ ] Combat hand
-    - [ ] This requires a new branch to work on spell book behavior
-    - [ ] Dragon database should only keep track of spell ID, template ID, and name of each spell a player is capable of casting. It should also only store learned spells, not ones from equipment.
-    - [ ] Treasure cards (?)
-  - [ ] Combat director
-    - [ ] Need a system for a creature to get their own game stats
+- [ ] Combat:
+  - [x] `WizardZoneCreature` player interaction
+  - [x] The combat sigil:
+    - [x] Spawning combat sigils on demand
+    - [x] Players joining an existing duel on interaction
+    - [x] Creatures joining an existing duel on interaction
+    - [x] Despawning the sigil on duel completion
+  - [ ] Player decks:
+    - [ ] Players being able to add/remove spells from their spellbook
+    - [ ] Players being able to add/remove TC spells from their spellbook
+    - [ ] Spellbook spells appearing in combat rounds
+    - [x] Spells given from equipment
+    - [ ] Commands to add/remove a spell (TC)
+    - [ ] Commands to learn/unlearn a spell
+    - [ ] Persistently saving decks
+  - [ ] Combat participants:
+    - [x] Starting animation for each combat participant
+  - [ ] Combat hand:
+    - [x] A combat hand, which is 7 cards given at the beginning of each round
+    - [ ] Discarding cards
+    - [ ] Treasure cards
+  - [ ] Combat director:
+    - [x] Need a system for a creature to get their own game stats
     - [ ] Need a system for a creature to get the spells they are able to cast
-    - [ ] Combat AI for each `WizardZoneCreature` to determine what spell they should cast
-    - [ ] Combat director, which takes in all played cards and does the math
-  - [ ] Imlight needs to return the actions to the client
+    - [x] Take in all played cards and do the math
+    - [x] Imlight needs to return the actions to the client
+    - [ ] Combat execution time
+      - [x] Use cinematic times to dictate how long each spell will take
+      - [ ] Hanging effect times
+      - [ ] Spells being skipped if the caster has died before their turn
+  - [ ] Combat effects:
+    - [x] Fizzling
+    - [x] Damage
+    - [x] Healing
+    - [x] Area-of-effect spells
+    - [ ] Reshuffle
+    - [ ] Pacify
+    - [ ] Provoke
+    - [ ] Self damage (Sacrifice and Immolate)
+    - [ ] Global spells
+    - [ ] Hanging effects:
+      - [x] Blades
+      - [x] Anti-blades
+      - [x] Shields
+      - [x] Traps
+      - [ ] Bonus accuracy
+      - [ ] Negative accuracy
+      - [ ] Dispells
+      - [ ] Prisms
+      - [ ] Bonus healing
+      - [ ] Negative healing
+      - [ ] Damage-over-time
+    - [ ] Minions:
+      - [ ] Spawning minions
+      - [ ] Minion AI
+      - [ ] Stealing health from minion
+      - [ ] Sacrifice minion
+        - [ ] For pips
+        - [ ] For health
+    - [ ] Stealing hanging effects
+    - [ ] Per pip spells
+    - [ ] Pip donation spells
+  - [ ] Creature decks:
+    - [ ] Using the template ID of the equipped deck, find what spells a creature is capable of casting
+    - [ ] DCT (Dragon Creature Tool) to rebuild the spells
+  - [ ] Combat AI:
+    - [x] Unify behaviors so that both players and creatures may use the same classes
+    - [x] Creature inventory
+    - [x] Creature equipment
+    - [x] Creature stats changing based on equipment
+    - [ ] Aggressiveness: Creatures should have a chance to either prepare (blade/shield/trap) or attack
+    - [ ] Selfishness: When a creature prepares, there is a chance for them to put it on themselves or a teammate. Bosses will always buff themselves
+    - [ ] Intelligence: When a mob has pips saved, their intelligence dictates if they're smart enough to use a max pip spell or something else
+    - [ ] Hate: Mobs have an initial target. It will be the person across from them, or the only target available. A few things can change mob targeting:
+      - [ ] Taking damage from a player greatly increases the hate towards that player
+      - [ ] A player healing softly increases the hate of every mob in the duel
   - [ ] Ending the duel
   - [ ] Bugs:
-    - [ ] Creatures are still moving towards the center of the sigil despite being in combat.
+    - [x] Creatures are still moving towards the center of the sigil despite being in combat
+    - [x] Combat is very buggy when a third creature enters the duel
+    - [ ] Discarding is causing an exception for being out of bounds
+    - [ ] Healing in combat is not saved persistently
+    - [ ] Two duels happening in the same zone is very buggy
 
 ## Shops
 
 - [ ] Shops
-  - [ ] Imlight needs to send service range messages to a player that is within the vicinity of an NPC
-  - [ ] Imlight needs a `OnPlayerInteractionExit` method for `WizardZoneObject`.
-  - [ ] Perhaps make a new child class of `WizardZoneObject` for NPCs to handle shops and their own dialogue (?)
-  - [ ] `Wizard` needs methods to persistently add/remove gold
-  - [ ] Understand how the server is supposed to send shop data
-  - [ ] Commands for adding/removing gold
+  - [ ] Basic shopkeepers:
+    - [x] Hat
+    - [x] Robes
+    - [x] Boots
+    - [x] Rings
+    - [x] Amulets
+    - [x] Athames
+    - [x] Pets
+    - [x] Zeke
+    - [x] Eloise
+  - [x] Commands for adding/removing gold
+  - [ ] Other keepers:
+    - [ ] TC Shops
+    - [ ] Bazaar
+    - [ ] Professors
 
 ## World Transfers
 
-::: tip
-Imlight needs wizard zone object interaction first.
-:::
-
 - [ ] World transferring using the actual in-game GUI
-  - [ ] Imlight needs to send service range messages to a player that is within the vicinity of an NPC
-  - [ ] Imlight needs a `OnPlayerInteractionExit` method for `WizardZoneObject`.
+  - [ ] Sending service range from each world door
+  - [ ] Opening the world transfer GUI on interaction
+  - [ ] Sending each world the player is capable of entering
+  - [ ] Teleporting the player to the proper place on world transfer request:
+    - [ ] WizardCity
+    - [ ] Krokotopia
+    - [ ] Marleybone
+    - [ ] MooShu
+    - [ ] DragonSpyre
+
+## Social
+
+- [ ] Social:
+  - [ ] Friends List:
+    - [ ] Adding/removing a friend
+    - [ ] Teleporting to a friend
+  - [ ] Buddy stats
+  - [ ] Whispering
 
 ## Player Housing
 
