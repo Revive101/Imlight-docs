@@ -105,19 +105,6 @@
     - [ ] Bazaar
     - [ ] Professors
 
-## World Transfers
-
-- [ ] World transferring using the actual in-game GUI
-  - [ ] Sending service range from each world door
-  - [ ] Opening the world transfer GUI on interaction
-  - [ ] Sending each world the player is capable of entering
-  - [ ] Teleporting the player to the proper place on world transfer request:
-    - [ ] WizardCity
-    - [ ] Krokotopia
-    - [ ] Marleybone
-    - [ ] MooShu
-    - [ ] DragonSpyre
-
 ## Social
 
 - [ ] Social:
