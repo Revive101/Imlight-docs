@@ -66,6 +66,20 @@ Your command context will not drop. If you select a player, that player will sti
 | name | Quality Assurance | `.mod name $newName` | Adds a new name override to your character. |
 | maxgold | Quality Assurance | `.mod maxgold $newMaxGold` | Changes the amount of max gold you can carry. |
 | addgold | Quality Assurance | `.mod addgold $gold` | Adds gold to your wizard. |
+| maxhealth | Quality Assurance | `.mod maxhealth $newHealth` | Changes your base health value. |
+| maxmana | Quality Assurance | `.mod maxmana $newMana` | Changes your base mana value. |
+| currenthealth | Quality Assurance | `.mod currenthealth $newHealth` | Changes your current health value. |
+| currentmana | Quality Assurance | `.mod currentmana $newMana` | Changes your current mana value. |
+| heal | Quality Assurance | `.mod heal` | Heals your wizard to full. |
+| rejuv | Quality Assurance | `.mod rejuv | Fills your wizard's mana to full. |
+
+## Spellbook Commands
+| Command | Security | Syntax | Description |
+| ------- | -------- | ------ | ----------- |
+| add | Quality Assurance | `.sb add $spellId` | Adds a temporary spell to your spellbook. |
+| remove | Quality Assurance | `.sb remove $spellId` | Removes a temporary spell from your spellbook. |
+| learn | Quality Assurance | `.sb learn $spellId` | Permanently learn a new spell. |
+| unlearn | Quality Assurance | `.sb unlearn $spellId` | Unlearn a spell. |
 
 
 ## Debug Commands

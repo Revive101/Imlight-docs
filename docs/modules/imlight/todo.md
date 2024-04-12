@@ -10,28 +10,28 @@
     - [x] Creatures joining an existing duel on interaction
     - [x] Despawning the sigil on duel completion
   - [ ] Player decks:
-    - [ ] Players being able to add/remove spells from their spellbook
-    - [ ] Players being able to add/remove TC spells from their spellbook
-    - [ ] Spellbook spells appearing in combat rounds
+    - [x] Players being able to add/remove spells from their spellbook
+    - [x] Players being able to add/remove TC spells from their spellbook
+    - [x] Spellbook spells appearing in combat rounds
     - [x] Spells given from equipment
     - [ ] Commands to add/remove a spell (TC)
-    - [ ] Commands to learn/unlearn a spell
-    - [ ] Persistently saving decks
+    - [x] Commands to learn/unlearn a spell
+    - [x] Persistently saving decks
   - [ ] Combat participants:
     - [x] Starting animation for each combat participant
   - [ ] Combat hand:
     - [x] A combat hand, which is 7 cards given at the beginning of each round
-    - [ ] Discarding cards
+    - [x] Discarding cards
     - [ ] Treasure cards
   - [ ] Combat director:
     - [x] Need a system for a creature to get their own game stats
-    - [ ] Need a system for a creature to get the spells they are able to cast
+    - [x] Need a system for a creature to get the spells they are able to cast
     - [x] Take in all played cards and do the math
     - [x] Imlight needs to return the actions to the client
     - [ ] Combat execution time
       - [x] Use cinematic times to dictate how long each spell will take
-      - [ ] Hanging effect times
-      - [ ] Spells being skipped if the caster has died before their turn
+      - [x] Hanging effect times
+      - [x] Spells being skipped if the caster has died before their turn
   - [ ] Combat effects:
     - [x] Fizzling
     - [x] Damage
@@ -65,26 +65,26 @@
     - [ ] Per pip spells
     - [ ] Pip donation spells
   - [ ] Creature decks:
-    - [ ] Using the template ID of the equipped deck, find what spells a creature is capable of casting
+    - [x] Using the template ID of the equipped deck, find what spells a creature is capable of casting
     - [ ] DCT (Dragon Creature Tool) to rebuild the spells
   - [ ] Combat AI:
     - [x] Unify behaviors so that both players and creatures may use the same classes
     - [x] Creature inventory
     - [x] Creature equipment
     - [x] Creature stats changing based on equipment
-    - [ ] Aggressiveness: Creatures should have a chance to either prepare (blade/shield/trap) or attack
-    - [ ] Selfishness: When a creature prepares, there is a chance for them to put it on themselves or a teammate. Bosses will always buff themselves
-    - [ ] Intelligence: When a mob has pips saved, their intelligence dictates if they're smart enough to use a max pip spell or something else
-    - [ ] Hate: Mobs have an initial target. It will be the person across from them, or the only target available. A few things can change mob targeting:
+    - [x] Aggressiveness: Creatures should have a chance to either prepare (blade/shield/trap) or attack
+    - [x] Selfishness: When a creature prepares, there is a chance for them to put it on themselves or a teammate. Bosses will always buff themselves
+    - [x] Intelligence: When a mob has pips saved, their intelligence dictates if they're smart enough to use a max pip spell or something else
+    - [x] Hate: Mobs have an initial target. It will be the person across from them, or the only target available. A few things can change mob targeting:
       - [ ] Taking damage from a player greatly increases the hate towards that player
       - [ ] A player healing softly increases the hate of every mob in the duel
-  - [ ] Ending the duel
+  - [x] Ending the duel
   - [ ] Bugs:
     - [x] Creatures are still moving towards the center of the sigil despite being in combat
     - [x] Combat is very buggy when a third creature enters the duel
-    - [ ] Discarding is causing an exception for being out of bounds
+    - [x] Discarding is causing an exception for being out of bounds
     - [ ] Healing in combat is not saved persistently
-    - [ ] Two duels happening in the same zone is very buggy
+    - [x] Two duels happening in the same zone is very buggy
 
 ## Shops
 
