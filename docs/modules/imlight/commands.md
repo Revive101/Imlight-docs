@@ -80,6 +80,7 @@ Your command context will not drop. If you select a player, that player will sti
 | remove | Quality Assurance | `.sb remove $spellId` | Removes a temporary spell from your spellbook. |
 | learn | Quality Assurance | `.sb learn $spellId` | Permanently learn a new spell. |
 | unlearn | Quality Assurance | `.sb unlearn $spellId` | Unlearn a spell. |
+| unlearnall | Quality Assurance | `.sb unlearnall` | Unlearns all spells. |
 
 
 ## Debug Commands
