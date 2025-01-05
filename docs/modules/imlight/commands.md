@@ -77,7 +77,8 @@ Your command context will not drop. If you select a player, that player will sti
 | rejuv | Quality Assurance | `.mod rejuv` | Fills your wizard's mana to full. |
 | energize | Quality Assurance | `mod energize` | Refills the energy of your character. |
 | cantriplevelup | Quality Assurance | `mod cantriplevelup` | Levels up your cantrip level. |
-| cantriplevel | Qualtiy Assurance | `mod cantriplevel $level` | Changes your cantrip level. |
+| cantriplevel | Quality Assurance | `mod cantriplevel $level` | Changes your cantrip level. |
+| badge | Quality Assurance | `mod badge $locale_id` | Changes your badge. This must be a locale id to function. |
 
 
 ## Spellbook Commands
