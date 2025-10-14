@@ -8,7 +8,7 @@ Session actors are generic and are used in all server types. What separates thei
 
 Session actors are an actor representation of a connected client. Their responsibilites should reflect this. Ideally, you should refrain from any business logic in session actors or their [message services](./messageservices.md).
 
-Instead, session actors should focus on receiving messages from the client, validating them, and routing any actual logic to [system actors](../gameserver/shared-data-systems.md#factory-system-abstractions).
+Instead, session actors should focus on receiving messages from the client, validating them, and routing any actual logic to [system actors](./shared-data-systems.md#factory-system-abstractions).
 
 This applies inwards as well. A session actor is the *only* way to speak to a connected client. 
 

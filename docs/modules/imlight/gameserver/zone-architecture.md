@@ -8,7 +8,7 @@ Every `Zone` actor exists as a child actor of the [GameWorld](./gameserver.md#ga
 
 ## Zone Loading
 
-As mentioned in the previous section on [Shared Data Systems](./shared-data-systems.md), zones load their configuration from shared archives.
+As mentioned in the previous section on [Shared Data Systems](../concepts/shared-data-systems.md), zones load their configuration from shared archives.
 
 Zones are loaded (or downloaded) on-demand when players enter them. Each zone corresponds to a specific path (e.g., "WorldName/ZoneName") and is managed by a `Zone` actor instance.
 
@@ -66,7 +66,7 @@ Manages all zone entities like objects, NPCs, positionals, and particles.
 Tracks players within the zone, handling their entry, exit, and broadcasts.
 
 ::: tip
-This supervisor does NOT manage [session actors](./sessionactor.md). Themselves. They only contain a reference to the session actor for each player in the zone.
+This supervisor does NOT manage [session actors](../concepts/sessionactor.md). Themselves. They only contain a reference to the session actor for each player in the zone.
 :::
 
 ### Other Supervisors

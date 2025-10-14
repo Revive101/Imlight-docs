@@ -34,7 +34,7 @@ Server messages are defined in the `Imlight.CoreLib.Shared.Packets` namespace.
 
 ## Receive Protocol Dispatcher
 
-The `ReceiveProtocolDispatcher` class is an abstraction for the [actor model](./actorsystem.md) that allows for message handlers in a class to instead be identified using C# attributes.
+The `ReceiveProtocolDispatcher` class is an abstraction for the [actor model](./actorfundamentals.md#actor-fundamentals) that allows for message handlers in a class to instead be identified using C# attributes.
 
 For example:
 ```csharp
