@@ -36,19 +36,45 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Contributing',
+          text: 'Core Concepts',
           items: [
-            { text: 'Building Imlight', link: '/imlight/contrib/building' },
-            { text: 'Actor System', link: '/imlight/contrib/actorsystem' },
-            { text: 'Schemas', link: '/imlight/contrib/schemas' },
-            { text: 'Sessions', link: '/imlight/contrib/sessionactor' },
-            { text: 'Message Services', link: '/imlight/contrib/messageservice' },
+            { text: 'Imcodec', link: '/imlight/concepts/imcodec' },
+            { text: 'Actor System', link: '/imlight/concepts/actorfundamentals' },
+            { text: 'Message Handling', link: '/imlight/concepts/messagehandling' },
+            { text: 'Player Architecture', link: '/imlight/concepts/playerarchitecture' },
+            { text: 'Shared Data Systems', link: '/imlight/concepts/shared-data-systems' },
           ]
         },
         {
-          text: 'Login',
+          text: 'Session Actors',
           items: [
-            { text: 'Login Server', link: '/imlight/login/index' },
+            { text: 'Session Actor', link: '/imlight/concepts/sessionactor' },
+            { text: 'Message Services', link: '/imlight/concepts/messageservices' },
+          ]
+        },
+        {
+          text: 'Login Server',
+          items: [
+            { text: 'Login Server', link: '/imlight/loginserver/loginserver' },
+            { text: 'Authentication & Characters', link: '/imlight/loginserver/authentication-flow' },
+            { text: 'Server Discovery', link: '/imlight/loginserver/server-discovery' },
+          ]
+        },
+        {
+          text: 'Game Server',
+          items: [
+            { text: 'Game Server', link: '/imlight/gameserver/gameserver' },
+            { text: 'Commands', link: '/imlight/gameserver/commands' },
+            { text: 'Combat System', link: '/imlight/gameserver/combat-system' },
+            { text: 'Zone Architecture', link: '/imlight/gameserver/zone-architecture' },
+            { text: 'Zone Components', link: '/imlight/gameserver/zone-components' },
+          ]
+        },
+        {
+          text: 'WizardData',
+          items: [
+            { text: 'WizardData', link: '/imlight/wizarddata/wizarddata' },
+            { text: 'Player Models', link: '/imlight/wizarddata/player-models' },
           ]
         },
       ],
